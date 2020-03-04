@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{16E038B1-1D6C-49C5-97FE-1986D30A84DC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>照明模块软件</RootNamespace>
+    <AssemblyName>照明模块软件</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>图标.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CAEA.Common.HMIControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CAEA.Common.HMIControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Communication\Communication.cs" />
+    <Compile Include="ConfigClass.cs" />
+    <Compile Include="Models\批量发送信息.cs" />
+    <Compile Include="UI\ConnectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ConnectForm.designer.cs">
+      <DependentUpon>ConnectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FaultModles.cs" />
+    <Compile Include="Localtion\GetLocaltion.cs" />
+    <Compile Include="Localtion\Localtionparam.cs" />
+    <Compile Include="Models\场景子模块.cs" />
+    <Compile Include="Models\场景开关信息.cs" />
+    <Compile Include="Models\场景模块.cs" />
+    <Compile Include="Models\场景调试模块.cs" />
+    <Compile Include="operate\SwitchOperate.cs" />
+    <Compile Include="operate\场景执行.cs" />
+    <Compile Include="Models\sysParam.cs" />
+    <Compile Include="UI\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\国家公休日界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\国家公休日界面.Designer.cs">
+      <DependentUpon>国家公休日界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\场景模块添加界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\场景模块添加界面.Designer.cs">
+      <DependentUpon>场景模块添加界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\场景添加.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\场景添加.Designer.cs">
+      <DependentUpon>场景添加.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\场景编辑.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\场景编辑.Designer.cs">
+      <DependentUpon>场景编辑.cs</DependentUpon>
+    </Compile>
+    <Compile Include="关于.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="关于.Designer.cs">
+      <DependentUpon>关于.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\场景调试模块编辑.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\场景调试模块编辑.Designer.cs">
+      <DependentUpon>场景调试模块编辑.cs</DependentUpon>
+    </Compile>
+    <Compile Include="数据库\AccessLib.cs" />
+    <Compile Include="Controls\SwitchButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="operate\ModelsOperate.cs" />
+    <Compile Include="UI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controls\MainModelPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SubModelPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\主模块.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\主模块.Designer.cs">
+      <DependentUpon>主模块.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\开关模块界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\开关模块界面.Designer.cs">
+      <DependentUpon>开关模块界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\开关模块.cs" />
+    <Compile Include="Models\调试模块.cs" />
+    <Compile Include="UI\参数设置.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\参数设置.Designer.cs">
+      <DependentUpon>参数设置.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\场景设置.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\场景设置.Designer.cs">
+      <DependentUpon>场景设置.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\开关管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\开关管理.Designer.cs">
+      <DependentUpon>开关管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\故障查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\故障查询.Designer.cs">
+      <DependentUpon>故障查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日历\PanelDay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="日历\PanelDay.Designer.cs">
+      <DependentUpon>PanelDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日历\PanelMonth.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="日历\PanelMonth.Designer.cs">
+      <DependentUpon>PanelMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日历\RoundPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="日历\RoundPanel.Designer.cs">
+      <DependentUpon>RoundPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日历\获取节假日.cs" />
+    <Compile Include="UI\模块管理界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\模块管理界面.Designer.cs">
+      <DependentUpon>模块管理界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\注册界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\注册界面.Designer.cs">
+      <DependentUpon>注册界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="计算日出日落.cs" />
+    <Compile Include="UI\调试界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\调试界面.designer.cs">
+      <DependentUpon>调试界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="软件注册.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="软件注册.Designer.cs">
+      <DependentUpon>软件注册.cs</DependentUpon>
+    </Compile>
+    <Compile Include="软件注册\软件注册.cs" />
+    <EmbeddedResource Include="UI\ConnectForm.resx">
+      <DependentUpon>ConnectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\主模块.resx">
+      <DependentUpon>主模块.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\开关模块界面.resx">
+      <DependentUpon>开关模块界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\参数设置.resx">
+      <DependentUpon>参数设置.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\国家公休日界面.resx">
+      <DependentUpon>国家公休日界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\场景模块添加界面.resx">
+      <DependentUpon>场景模块添加界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\场景添加.resx">
+      <DependentUpon>场景添加.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\场景编辑.resx">
+      <DependentUpon>场景编辑.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\场景设置.resx">
+      <DependentUpon>场景设置.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\开关管理.resx">
+      <DependentUpon>开关管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\故障查询.resx">
+      <DependentUpon>故障查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="关于.resx">
+      <DependentUpon>关于.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\场景调试模块编辑.resx">
+      <DependentUpon>场景调试模块编辑.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日历\PanelDay.resx">
+      <DependentUpon>PanelDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日历\PanelMonth.resx">
+      <DependentUpon>PanelMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\模块管理界面.resx">
+      <DependentUpon>模块管理界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\注册界面.resx">
+      <DependentUpon>注册界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\调试界面.resx">
+      <DependentUpon>调试界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="软件注册.resx">
+      <DependentUpon>软件注册.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\灯泡关.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\灯泡开.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\开.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\选中.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\选中天.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SerialCommLib\SerialCommLib.csproj">
+      <Project>{b45d3827-fcd2-455a-a2aa-d4700f1eae31}</Project>
+      <Name>SerialCommLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="图标.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

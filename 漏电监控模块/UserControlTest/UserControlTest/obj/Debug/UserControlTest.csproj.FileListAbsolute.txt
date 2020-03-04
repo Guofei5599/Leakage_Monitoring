@@ -1,0 +1,23 @@
+c:\users\sq120pc02\documents\visual studio 2017\Projects\UserControlTest\UserControlTest\bin\Debug\UserControlTest.exe.config
+c:\users\sq120pc02\documents\visual studio 2017\Projects\UserControlTest\UserControlTest\bin\Debug\UserControlTest.exe
+c:\users\sq120pc02\documents\visual studio 2017\Projects\UserControlTest\UserControlTest\bin\Debug\UserControlTest.pdb
+c:\users\sq120pc02\documents\visual studio 2017\Projects\UserControlTest\UserControlTest\obj\Debug\UserControlTest.Form1.resources
+c:\users\sq120pc02\documents\visual studio 2017\Projects\UserControlTest\UserControlTest\obj\Debug\UserControlTest.Properties.Resources.resources
+c:\users\sq120pc02\documents\visual studio 2017\Projects\UserControlTest\UserControlTest\obj\Debug\UserControlTest.csproj.GenerateResource.Cache
+c:\users\sq120pc02\documents\visual studio 2017\Projects\UserControlTest\UserControlTest\obj\Debug\UserControlTest.csproj.CoreCompileInputs.cache
+c:\users\sq120pc02\documents\visual studio 2017\Projects\UserControlTest\UserControlTest\obj\Debug\UserControlTest.exe
+c:\users\sq120pc02\documents\visual studio 2017\Projects\UserControlTest\UserControlTest\obj\Debug\UserControlTest.pdb
+C:\Users\SQ120PC02\documents\visual studio 2017\Projects\UserControlTest\UserControlTest\obj\Debug\UserControlTest.UCUesrCenter.resources
+C:\Users\SQ120PC02\documents\visual studio 2017\Projects\UserControlTest\UserControlTest\obj\Debug\UserControlTest.controls.PanelDay.resources
+C:\Users\SQ120PC02\documents\visual studio 2017\Projects\UserControlTest\UserControlTest\obj\Debug\UserControlTest.controls.PanelMonth.resources
+C:\Users\Administrator\Desktop\UserControlTest\UserControlTest\bin\Debug\UserControlTest.exe.config
+C:\Users\Administrator\Desktop\UserControlTest\UserControlTest\obj\Debug\UserControlTest.exe
+C:\Users\Administrator\Desktop\UserControlTest\UserControlTest\obj\Debug\UserControlTest.pdb
+C:\Users\Administrator\Desktop\UserControlTest\UserControlTest\bin\Debug\UserControlTest.exe
+C:\Users\Administrator\Desktop\UserControlTest\UserControlTest\bin\Debug\UserControlTest.pdb
+C:\Users\Administrator\Desktop\UserControlTest\UserControlTest\obj\Debug\UserControlTest.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\UserControlTest\UserControlTest\obj\Debug\UserControlTest.controls.PanelDay.resources
+C:\Users\Administrator\Desktop\UserControlTest\UserControlTest\obj\Debug\UserControlTest.controls.PanelMonth.resources
+C:\Users\Administrator\Desktop\UserControlTest\UserControlTest\obj\Debug\UserControlTest.Form1.resources
+C:\Users\Administrator\Desktop\UserControlTest\UserControlTest\obj\Debug\UserControlTest.Properties.Resources.resources
+C:\Users\Administrator\Desktop\UserControlTest\UserControlTest\obj\Debug\UserControlTest.csproj.GenerateResource.Cache

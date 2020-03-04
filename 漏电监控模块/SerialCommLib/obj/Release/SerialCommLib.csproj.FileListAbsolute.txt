@@ -1,0 +1,4 @@
+C:\Users\Administrator\Desktop\20191114\SerialCommLib\bin\Release\SerialCardReaderLib.dll
+C:\Users\Administrator\Desktop\20191114\SerialCommLib\bin\Release\SerialCardReaderLib.pdb
+C:\Users\Administrator\Desktop\20191114\SerialCommLib\obj\Release\SerialCardReaderLib.dll
+C:\Users\Administrator\Desktop\20191114\SerialCommLib\obj\Release\SerialCardReaderLib.pdb

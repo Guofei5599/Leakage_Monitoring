@@ -1,0 +1,16 @@
+C:\Users\Administrator\Desktop\20191114\系统信息生成\bin\Debug\系统信息生成.exe.config
+C:\Users\Administrator\Desktop\20191114\系统信息生成\bin\Debug\系统信息生成.exe
+C:\Users\Administrator\Desktop\20191114\系统信息生成\bin\Debug\系统信息生成.pdb
+C:\Users\Administrator\Desktop\20191114\系统信息生成\obj\Debug\系统信息生成.编码转换.resources
+C:\Users\Administrator\Desktop\20191114\系统信息生成\obj\Debug\系统信息生成.Properties.Resources.resources
+C:\Users\Administrator\Desktop\20191114\系统信息生成\obj\Debug\编码转换.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\20191114\系统信息生成\obj\Debug\系统信息生成.exe
+C:\Users\Administrator\Desktop\20191114\系统信息生成\obj\Debug\系统信息生成.pdb
+C:\Users\Administrator\Desktop\新建文件夹\20191114\系统信息生成\bin\Debug\系统信息生成.exe.config
+C:\Users\Administrator\Desktop\新建文件夹\20191114\系统信息生成\bin\Debug\系统信息生成.exe
+C:\Users\Administrator\Desktop\新建文件夹\20191114\系统信息生成\bin\Debug\系统信息生成.pdb
+C:\Users\Administrator\Desktop\新建文件夹\20191114\系统信息生成\obj\Debug\系统信息生成.编码转换.resources
+C:\Users\Administrator\Desktop\新建文件夹\20191114\系统信息生成\obj\Debug\系统信息生成.Properties.Resources.resources
+C:\Users\Administrator\Desktop\新建文件夹\20191114\系统信息生成\obj\Debug\编码转换.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\新建文件夹\20191114\系统信息生成\obj\Debug\系统信息生成.exe
+C:\Users\Administrator\Desktop\新建文件夹\20191114\系统信息生成\obj\Debug\系统信息生成.pdb

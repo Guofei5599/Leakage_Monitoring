@@ -1,0 +1,5 @@
+C:\Users\Administrator\Desktop\刷卡\Client\SerialCardReaderLib\bin\Debug\SerialCardReaderLib.dll
+C:\Users\Administrator\Desktop\刷卡\Client\SerialCardReaderLib\bin\Debug\SerialCardReaderLib.pdb
+C:\Users\Administrator\Desktop\刷卡\Client\SerialCardReaderLib\obj\Debug\SerialCardReaderLib.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\刷卡\Client\SerialCardReaderLib\obj\Debug\SerialCardReaderLib.dll
+C:\Users\Administrator\Desktop\刷卡\Client\SerialCardReaderLib\obj\Debug\SerialCardReaderLib.pdb
